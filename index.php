@@ -10,7 +10,7 @@ include "includes/header.php";
 <?php
 require_once "functions/function.php";
 
-maFonction("Bonjour");
+
 
 include "includes/footer.php";
 
