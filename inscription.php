@@ -11,7 +11,7 @@ global $db;
 
 ?>
 
-<div class="container ">
+<div class="container" id="containerInscription" >
     <h1 class="text-center mt-4 mb-4">Inscription</h1>
     <hr>
     <form id="inscriptionForm" method="post" action="">
@@ -74,6 +74,7 @@ global $db;
             <div class="error" id="errorMdpConfirm"></div>
         </div>
         <button type="submit" class="btn btn-primary w-50 m-auto " name="valider" id="valider">Valider</button>
+        <p>Si vous avez déjà un compte <a href="connexion.php">cliquez ici</a> pour vous connecter.</p>
     </form>
 </div>
 

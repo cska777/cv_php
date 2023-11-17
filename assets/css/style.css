@@ -1,42 +1,175 @@
+/* Styles de base */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
-    height: 5%;
+    flex-shrink: 0;
     background-color: grey;
     color: white !important;
     text-align: center;
-    bottom: 0;
     width: 100%;
     height: 30px;
-    position: absolute;
+    position: relative;
+    margin-top: auto;
 }
 
-h1{
+h1 {
     font-family: 'Noto Serif Balinese', serif;
+}
+
+
+#containerConnexion p,
+#containerInscription p {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.btnDiv {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.btnDiv a {
+    text-decoration-line: none;
+    color: white;
 }
 
 .error {
     color: red;
 }
 
-
 #valider {
     margin-left: 25% !important;
 }
 
-#connexion{
-    width: 20%!important;
-    margin-left: 40%!important;
-    margin-top: 5%!important;
+#connexion {
+    width: 20% !important;
+    margin-left: 40% !important;
+    margin-top: 5% !important;
 }
 
-hr{
+hr {
     width: 50%;
     margin-left: 25%;
-    height: 2px!important;
+    height: 2px !important;
     margin-bottom: 5%;
+}
+
+#etudiantForm {
+    margin-top: 8%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+#etudiantDiv {
+    width: 80% !important;
+    margin-left: 10%;
+}
+
+.table svg {
+    margin-right: 10%;
+}
+
+
+.btnMail {
+    padding: 5px 10px;
+    border: none;
+    background-image: linear-gradient(to right, #4b4b4b 0%, rgb(17, 17, 17) 100%);
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 4px 15px #4b4b4b7f;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btnMail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px #4b4b4b7f;
+}
+
+.btnMail:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(17, 17, 17, 0.481);
+}
+
+.btnModif {
+    padding: 5px 10px;
+    border: none;
+    background-image: linear-gradient(to right, #25729f 0%, #227eb3 100%);
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 4px 15px  #25729f78;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btnModif:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px #25729f78;
+}
+
+.btnModif:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px  #227eb371;
+}
+
+.btnSupp {
+    padding: 5px 10px;
+    border: none;
+    background-image: linear-gradient(to right, #e62525 0%, #ff4646 100%);
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 0 4px 15px  #e6252578;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btnSupp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px #ff464650;
+}
+
+.btnSupp:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px  #e6252578;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles à appliquer lorsque la largeur de l'écran est de 768 pixels ou moins */
+
+    #containerIndex {
+        margin-top: 5%;
+    }
+
+    .btnDiv {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #connexion {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    #etudiantForm {
+        margin-top: 5%;
+        width: 80%;
+        margin-left: 10%;
+    }
 }
