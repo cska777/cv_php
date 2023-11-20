@@ -40,7 +40,7 @@ session_start();
             <button type="submit" class="btn btn-primary m-auto " name="connexion" id="connexion">Connexion</button>
         </div>
 
-        <p>Si vous n'avez pas de compte vous pouvez en créer un en <a href="inscription.php">cliquant ici.</a></p>
+        <p> aaa Si vous n'avez pas de compte vous pouvez en créer un en <a href="inscription.php">cliquant ici.</a></p>
     </div>
 </form>
 <?php
